@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="title_activity_login">登  录</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_user_name">用户名</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in_register">登      录</string>
+    <string name="action_sign_in_short">登    录</string>
+    <string name="action_server_set">服务器连接设置</string>
+    <string name="action_forgot_password">找回密码</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_name">无效的用户名</string>
+    <string name="error_invalid_password">密码不正确t</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">不能为空</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="darkgray">#938192</color>
+    <color name="black2">#050505</color>
+    <color name="red2">#EB1807</color>
+    <color name="gray">#ff888888</color>
+    <color name="gray2">#F0F0F0</color>
+    <color name="gray3">#DAD8D8</color>
+    <color name="wathet">#0987CE</color>
+    <color name="text_color4">#656565</color>
+    <color name="white2">#F6F6F6</color>
+    <color name="text_color1">#777777</color>
+    <color name="text_color2">#808080</color>
+    <color name="text_color3">#B0B0B0</color>
+    <color name="text_color_blue">#3366A5</color>
+    <color name="white1">#EEEEEE</color>
+    <color name="itemcolcor">#fff1f6fc</color>
+    <color name="account_bg">#F7F7F8</color>
+    <color name="text_color5">#304D5D</color>
+    <color name="dark_green">#526735</color>
+    <color name="boder_color">#c6c5c6</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="no_color">#00000000</color>
+    <color name="bgcoloro">#FFFFFF</color>
+
+</resources>
