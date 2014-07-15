@@ -15,5 +15,6 @@
     <string name="title_activity_welcome_guide">WelcomeGuideActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_login_settings">LoginSettingsActivity</string>
 
 </resources>

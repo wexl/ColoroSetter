@@ -1,10 +1,12 @@
 package com.coloro.main;
 
+import com.coloro.LoginSettingsActivity;
 import com.coloro.R;
 import com.coloro.R.id;
 import com.coloro.R.layout;
 import com.coloro.R.menu;
 import com.coloro.R.string;
+import com.coloro.utils.MessageUtils;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -15,8 +17,10 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
@@ -27,11 +31,16 @@ import android.widget.TextView;
  * well.
  */
 public class LoginActivity extends Activity {
+
 	/**
 	 * A dummy authentication store containing known user names and passwords.
 	 * TODO: remove after connecting to a real authentication system.
 	 */
 	private static final String[] DUMMY_CREDENTIALS = new String[] { "foo@example.com:hello", "bar@example.com:world" };
+    /**
+     * Activity Log标记
+     */
+	private static final String ACTIVITY_TAG="LoginActivity";
 
 	/**
 	 * The default email to populate the email field with.
@@ -56,6 +65,7 @@ public class LoginActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		Log.v(ACTIVITY_TAG, "LoginAcitvity Start");
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_login);
@@ -94,6 +104,16 @@ public class LoginActivity extends Activity {
 		super.onCreateOptionsMenu(menu);
 		getMenuInflater().inflate(R.menu.login, menu);
 		return true;
+	}
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		Log.d(ACTIVITY_TAG, item.getTitle().toString());
+		MessageUtils.shortToast(LoginActivity.this, item.getTitle().toString());
+		int id = item.getItemId();
+		if(id==R.id.action_server_set){
+			startActivity(new Intent(LoginActivity.this, LoginSettingsActivity.class));
+		}
+		return super.onOptionsItemSelected(item);
 	}
 
 	/**
@@ -195,6 +215,7 @@ public class LoginActivity extends Activity {
 			try {
 				// Simulate network access.
 				Thread.sleep(2000);
+				//使用Socket连接远程服务器
 			} catch (InterruptedException e) {
 				return false;
 			}
